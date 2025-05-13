@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+div {
+    width: 700px;
+    padding: 0.5rem;
+    border: 1px solid gray;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 200px;
+}
+
+.img-with-float-left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.img-with-float-right {
+    float: center;
+    margin-left: 1rem;
+}

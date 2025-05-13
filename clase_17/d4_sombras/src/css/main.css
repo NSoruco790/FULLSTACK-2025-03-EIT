@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+article h3 {
+    font-size: 3rem;
+
+    /*
+        La propiedad text-shadow define una sombra para el texto.
+        Se compone de los siguientes valores:
+            - x: desplazamiento horizontal de la sombra (acepta valores negativos)
+            - y: desplazamiento vertical de la sombra (acepta valores negativos)
+            - blur: radio de difuminado de la sombra (cuanto mayor el valor, más difusa)
+            - color: color de la sombra
+    */
+    text-shadow: 2px 2px 3px yellow;
+
+}
+
+article p {
+    font-size: 2rem;
+    text-shadow: 0 0 9px black;
+}
+
+article {
+    padding: 1rem;
+    background-color: orange;
+
+    /*
+        La propiedad box-shadow define la sombra de un contenedor.
+            Se compone de los siguientes valores:
+            - x: desplazamiento horizontal de la sombra (acepta valores negativos)
+            - y: desplazamiento vertical de la sombra (acepta valores negativos)
+            - blur: radio de difuminado de la sombra (cuanto mayor el valor, más difusa)
+            - spread: tamaño de la sombra (acepta valores negativos, se expande o contrae)
+            - inset: indica si la sombra es interna (inset) o externa (sin inset)
+            - color: color de la sombra
+    */
+    box-shadow: 3px 3px 15px 5px inset black;
+}

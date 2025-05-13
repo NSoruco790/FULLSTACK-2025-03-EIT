@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    gap: 3rem;
+}
+
+div {
+    height: 300px;
+    width: 300px;
+    border: 1px solid gray;
+    background-color: #e3e2e2;
+    margin-bottom: 1rem;
+}
+
+img {
+    /*
+        IMPORTANTE: Para que object-fit funcione correctamente, la imagen debe
+        tener un tamaño fijo en ancho y alto. En este caso, usamos 100% para que
+        tome el tamaño del div contenedor.
+    */
+    width: 100%;
+    height: 100%;
+}
+
+.img-with-fill {
+    /* deforma la imagen para llenar todo el contenedor */
+    object-fit: fill;
+}
+
+.img-with-contain {
+    /* ajusta la imagen sin recortarla, puede dejar espacio */
+    object-fit: contain;
+    object-position: bottom left;
+}
+
+.img-with-cover {
+    /* recorta la imagen para llenar todo el contenedor */
+    object-fit: cover;
+    object-position: top right;
+}
+
+.img-with-none {
+    /* mantiene tamaño original, puede salir del contenedor */
+    object-fit: none;
+    object-position: top right;
+}
+
+.img-with-scale-down {
+    /* usa el tamaño más chico entre none y contain */
+    object-fit: scale-down;
+    object-position: top right;
+}

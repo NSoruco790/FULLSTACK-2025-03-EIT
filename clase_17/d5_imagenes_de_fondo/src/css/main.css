@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.background-image-with-text {
+    height: 60vh;
+    width: 100%;
+    padding: 1rem;
+    background-image: url("../assets/images/img01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-image-with-text-and-image {
+    height: 60vh;
+    width: 100%;
+    padding: 1rem;
+    background-image: url("../assets/images/img02.png"), url("../assets/images/img03.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-position: left, center;
+    background-blend-mode: darken, normal;
+}
+
+.background-image-with-gradient {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(217deg, #66717E, #292955, #c0975a 70%);
+
+    /* Variantes de gradientes */
+    /* background-image: conic-gradient(#292955, #c0975a 70%); */
+    /* background-image: radial-gradient(#292955, #c0975a 70%); */
+    /* background-image: repeating-linear-gradient(#292955, #c0975a 10%); */
+    /* background-image: repeating-radial-gradient(#292955, #c0975a 10%); */
+}
+
+.background-image-with-scroll {
+    height: fit-content;
+    width: 100%;
+    padding: 1rem;
+    background-image: url("../assets/images/img04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.background-image-with-scroll article {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.background-image-with-text h2,
+.background-image-with-text p,
+.background-image-with-text-and-image h2,
+.background-image-with-text-and-image p,
+.background-image-with-scroll h2,
+.background-image-with-scroll article h3,
+.background-image-with-scroll article p,
+.background-image-with-scroll article ul li {
+    color: white;
+}
+
+/* */

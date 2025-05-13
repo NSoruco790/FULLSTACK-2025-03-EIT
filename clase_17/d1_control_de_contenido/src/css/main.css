@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+div {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5rem;
+    border: 1px solid gray;
+    background-color: beige;
+}
+
+.div-with-hidden {
+    overflow: hidden;
+}
+
+.div-with-scroll {
+    overflow: scroll;
+}
