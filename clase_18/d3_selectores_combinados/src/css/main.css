@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+section {
+    padding: 1.5rem 0;
+}
+
+/* Selector descendiente (espacio) */
+div span {
+    color: red;
+}
+
+/* Selector de hijo directo (>) */
+article>p {
+    color: blue;
+}
+
+/* Selector de hermano adyacente (+) */
+h4+p {
+    color: green;
+}
+
+/* Selector de hermanos generales (~) */
+span~p {
+    color: orange;
+}

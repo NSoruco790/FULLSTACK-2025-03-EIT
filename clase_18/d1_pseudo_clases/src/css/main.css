@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+p a:link {
+    color: brown;
+}
+
+p a:visited {
+    color: green;
+}
+
+.rectangle {
+    height: 50px;
+    width: 300px;
+    margin: 1rem 0;
+    background-color: gray;
+}
+
+.rectangle:hover {
+    background-color: brown;
+}
+
+.rectangle:active {
+    background-color: green;
+}
+
+.empty-container:empty {
+    height: 50px;
+    width: 300px;
+    margin: 1rem 0;
+    border: 1px dashed gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type=checkbox] {
+    /* Cambia color del checkbox*/
+    accent-color: brown;
+}
+
+input[name=first-name]:enabled {
+    outline: none;
+    border: 1px solid blue;
+}
+
+input[name=first-name]:focus {
+    border-width: 2px;
+}
+
+input[name=last-name]:disabled {
+    outline: none;
+    border: 1px solid lightblue;
+}
+
+input[type=email]:valid {
+    background-color: lightgreen;
+}
+
+input[type=email]:invalid {
+    background-color: lightpink;
+}
+
+input[name=Registry]:read-only {
+    background-color: lightgrey;
+}
+
+.container {
+    width: 300px;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.container p:first-of-type {
+    color: red;
+}
+
+.container p:nth-of-type(3) {
+    color: blue;
+}
+
+.container p:nth-last-of-type(2) {
+    color: violet;
+}
+
+.container p:last-of-type {
+    color: green;
+}
+
+.container :first-child {
+    text-decoration: 2px underline red;
+}
+
+.container :nth-child(4) {
+    text-decoration: 2px underline blue;
+}
+
+.container :nth-last-child(5) {
+    text-decoration: 2px underline violet;
+}
+
+.container :last-child {
+    text-decoration: 2px underline green;
+}
+
+.container::after {
+    color: green;
+}
