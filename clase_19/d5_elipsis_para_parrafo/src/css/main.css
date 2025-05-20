@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    height: 100px;
+    width: 300px;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+
+p {
+    text-align: justify;
+
+    /* 💡 Este técnica de elipsis funciona bien en los navegadores modernos excepto en Internet Explorer. */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    line-clamp: 4;
+}

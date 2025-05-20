@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+.text-1 {
+    text-align: justify;
+}
+
+.text-2 {
+    /* Por defecto el valor es "normal".  */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-3 {
+    white-space: nowrap;
+    overflow: hidden;
+
+    /* Por defecto el valor es "clip".  */
+    text-overflow: ellipsis;
+}
+
+.text-4 {
+    /* Por defecto el valor es "normal".  */
+    line-height: 2rem;
+
+    /* Por defecto el valor es "normal".  */
+    letter-spacing: 0.25rem;
+
+    /* Por defecto el valor es "normal".  */
+    word-spacing: 1rem;
+}

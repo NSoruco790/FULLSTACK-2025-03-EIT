@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    gap: 3rem;
+}
+
+.static-cards div,
+.relative-cards div,
+.absolute-cards div,
+.fixed-cards div,
+.sticky-cards div {
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.relative-cards,
+.absolute-cards {
+    position: relative;
+}
+
+/* Posición estática */
+.static-cards div:nth-of-type(2) {
+    position: static;
+    background-color: #cc6600;
+}
+
+/* Posición relativa */
+.relative-cards div:nth-of-type(2) {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+    background-color: rgb(204, 102, 0, 0.75);
+}
+
+/* Posición absoluta */
+.absolute-cards div:nth-of-type(2) {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+    background-color: rgb(204, 102, 0, 0.75);
+}
+
+/* Posición fija */
+.fixed-cards div:nth-of-type(2) {
+    position: fixed;
+    top: 25px;
+    left: 940px;
+    z-index: 2;
+    background-color: rgb(204, 102, 0, 0.75);
+}
+
+/* Posición de pegatina */
+.sticky-cards div:nth-of-type(2) {
+    position: sticky;
+    top: 15px;
+    z-index: 2;
+    background-color: rgb(204, 102, 0, 0.75);
+}
