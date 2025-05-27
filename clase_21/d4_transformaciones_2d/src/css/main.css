@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 80vh;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+}
+
+/* Mueve 100px a la derecha y 50% hacia abajo del propio alto */
+.translate {
+    transform: translate(100px, 50%);
+    background-color: brown;
+}
+
+/* Escala al doble en X y a la mitad en Y */
+.scale {
+    transform: scale(2, 0.5);
+    background-color: green;
+}
+
+/* Rota el elemento 90 grados alrededor del eje X */
+.rotateX {
+    transform: rotateX(45deg);
+    background-color: blue;
+}
+
+/* Rota el elemento 25 grados alrededor del eje Y */
+.rotateY {
+    transform: rotateY(25deg);
+    background-color: darkblue;
+}
+
+/* Rota el elemento 25 grados alrededor del eje Z (gira en el plano 2D normal) */
+.rotateZ {
+    transform: rotateZ(25deg);
+    background-color: darkgreen;
+}
+
+/* Sesga 30 grados en X y 20 en Y */
+.skew {
+    transform: skew(30deg, 20deg);
+    background-color: violet;
+}

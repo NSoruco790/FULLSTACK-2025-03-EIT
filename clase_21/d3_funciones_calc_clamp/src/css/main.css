@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    height: 100vh;
+    width: 80%;
+    border: 1px dashed #444;
+}
+
+.card {
+    padding: 0.5rem;
+    border: 1px solid #444;
+    background-color: #e0e0e0;
+}
+
+.card-calc {
+    /* El ancho será el 100% del contenedor menos 200px. */
+    width: calc(100% - (100px * 2));
+}
+
+.card-clamp {
+    /*
+        300px es el valor mínimo → el ancho nunca será menor a 300px.
+        50% es el valor ideal → el ancho intenta ocupar la mitad del contenedor.
+        500px es el valor máximo → el ancho nunca superará los 500px.
+
+    */
+    width: clamp(300px, 50%, 500px);
+}

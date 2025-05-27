@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.card-1 {
+    height: 25%;
+    width: 50%;
+
+    min-width: 420px;
+    max-width: 600px;
+    min-height: 100px;
+    max-height: 150px;
+
+    border: 1px solid #444;
+    background-color: #b1d6b1;
+    padding: 0.5rem;
+}
+
+.card-2 {
+    height: 25%;
+    width: 50%;
+
+    border: 1px solid #444;
+    background-color: #b1cad6;
+    padding: 0.5rem;
+}

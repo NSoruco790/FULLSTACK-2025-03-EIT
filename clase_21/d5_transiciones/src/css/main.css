@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    padding: 0.5rem;
+}
+
+/* Elemento 1: cambia color con transición de 3s */
+.card:first-of-type {
+    background-color: salmon;
+    transition: background-color 3s;
+}
+
+.card:first-of-type:hover {
+    background-color: blue;
+}
+
+/* Elemento 2: se mueve, escala y rota en 2s */
+.card:nth-of-type(2) {
+    background-color: brown;
+    transition: transform 2s ease-in-out;
+}
+
+.card:nth-of-type(2):hover {
+    transform: translateX(50px) scale(2) rotateZ(180deg);
+    transform-origin: center center;
+}
+
+/* Elemento 3: cambia de color en 4s y redondea bordes en 2s con delay de 1s */
+.card:nth-of-type(3) {
+    background-color: orange;
+}
+
+.card:nth-of-type(3):hover {
+    background-color: brown;
+    border-radius: 25%;
+    transition: background-color 4s ease-in, border-radius 2s ease-out 1s;
+}
