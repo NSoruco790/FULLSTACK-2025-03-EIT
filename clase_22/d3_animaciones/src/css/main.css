@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+}
+
+.container div {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+}
+
+/* ******* change-border-radius-element ******* */
+.container div:first-of-type {
+    background-color: black;
+    animation-name: change-border-radius-element;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
+}
+
+@keyframes change-border-radius-element {
+    from {
+        border-radius: 0;
+    }
+
+    to {
+        border-radius: 100%;
+    }
+}
+
+/* *********** change-color-element *********** */
+.container div:nth-of-type(2) {
+    background-color: gray;
+    animation-name: change-color-element;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color-element {
+    0% {
+        background-color: darkred;
+    }
+
+    33% {
+        background-color: orange;
+    }
+
+    66% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+/* ****************** move-element ****************** */
+.container div:last-of-type {
+    background-color: green;
+    animation-name: move-element;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    transform-origin: center center;
+    border: 3px solid black;
+}
+
+@keyframes move-element {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(200px) rotate(360deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(360deg);
+    }
+}

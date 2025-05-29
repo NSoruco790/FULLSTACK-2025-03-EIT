@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack Engineer" />
+    <meta name="keywords" content="bootcamp, full stack, desarrollo web, HTML, CSS, JavaScript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+
+    <title>Mi App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Trabajando con slider manual</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ejemplos de uso </h2>
+
+            <div class="slider">
+                <!-- Radios para controlar slides -->
+                <input type="radio" name="slider" id="slide1" hidden checked>
+                <input type="radio" name="slider" id="slide2" hidden>
+                <input type="radio" name="slider" id="slide3" hidden>
+
+                <!-- Contenedor de slides -->
+                <div class="slides">
+                    <div class="slide"><img src="./assets/images/cars/img01.jpg" alt="Coche deportivo 1" /></div>
+                    <div class="slide"><img src="./assets/images/cars/img02.jpg" alt="Coche deportivo 2" /></div>
+                    <div class="slide"><img src="./assets/images/cars/img03.jpg" alt="Coche deportivo 3" /></div>
+                </div>
+
+                <!-- Indicadores de navegación -->
+                <div class="nav-dots">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+
+                <!-- Botones de navegación (prev y next) -->
+                <label class="next-nav-button" for="slide2">›</label>
+                <label class="next-nav-button" for="slide3">›</label>
+                <label class="prev-nav-button" for="slide2">‹</label>
+                <label class="prev-nav-button" for="slide1">‹</label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

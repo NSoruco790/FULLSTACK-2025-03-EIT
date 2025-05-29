@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+}
+
+.container div {
+    height: fit-content;
+    width: 250px;
+}
+
+.container div img {
+    width: 100%;
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+.brightness {
+    filter: brightness(0.4);
+}
+
+.contrast {
+    filter: contrast(200%);
+}
+
+.drop-shadow {
+    filter: drop-shadow(16px 16px 20px blue);
+}
+
+.grayscale {
+    filter: grayscale(75%);
+}
+
+.invert {
+    filter: invert(75%);
+}
+
+.opacity {
+    filter: opacity(25%);
+}
+
+.saturate {
+    filter: saturate(30%);
+}
+
+.sepia {
+    filter: sepia(60%);
+}
