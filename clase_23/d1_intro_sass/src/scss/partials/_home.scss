@@ -1,0 +1,53 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+// Variable privada (no se puede acceder desde afuera del partial)
+$_colorBase: #56cc56;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+
+    header {
+        h1 {
+            color: $_colorBase;
+        }
+    }
+
+    main {
+        section {
+            // Variable local
+            $colorLocal: #5f5218;
+
+            .sub-title {
+                color: $colorLocal;
+                text-decoration: underline solid black;
+            }
+
+            .card-1 {
+                background-color: #c5c1c1;
+                border: 3px solid nth(var.$colors, 2);
+
+                p {
+                    color: nth(var.$colors, 1);
+                }
+            }
+
+            .card-2 {
+                @include mix.card-dimensions(50px, 1050px);
+                background-color: var.$colorLight;
+                border-radius: 15px;
+            }
+
+            .card-3 {
+                @include mix.card-dimensions(250px, 100px, 1rem, 1rem);
+                background-color: var.$colorDark;
+            }
+        }
+    }
+}

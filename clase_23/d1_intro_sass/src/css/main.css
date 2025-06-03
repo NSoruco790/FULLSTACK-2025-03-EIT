@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+body header h1 {
+  color: #56cc56;
+}
+body main section .sub-title {
+  color: #5f5218;
+  -webkit-text-decoration: underline solid black;
+          text-decoration: underline solid black;
+}
+body main section .card-1 {
+  background-color: #c5c1c1;
+  border: 3px solid #8a5b2f;
+}
+body main section .card-1 p {
+  color: #df0404;
+}
+body main section .card-2 {
+  height: 50px;
+  width: 1050px;
+  padding: 1rem;
+  margin: 0;
+  background-color: #017fee;
+  border-radius: 15px;
+}
+body main section .card-3 {
+  height: 250px;
+  width: 100px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #000080;
+}

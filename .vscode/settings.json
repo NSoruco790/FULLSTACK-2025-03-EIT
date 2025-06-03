@@ -36,6 +36,17 @@
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml"
     },
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css",
+            "generateMap": false
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**"
+    ],
     "files.autoSave": "onFocusChange",
     "explorer.compactFolders": false,
     "terminal.integrated.cursorStyle": "line",
