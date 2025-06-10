@@ -1,0 +1,8 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+nav {
+    grid-area: navbar;
+
+    padding: var.$spacing-sm;
+}

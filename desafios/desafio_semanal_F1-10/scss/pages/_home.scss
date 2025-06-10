@@ -1,0 +1,98 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.home {
+    .banner {
+        position: relative;
+        left: 10vw;
+        height: 100vh;
+        width: 40vw;
+        padding: 3vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vw;
+
+        background-color: var.$color-dark-alpha-700;
+
+        &__title {
+            font-size: 2rem;
+            color: var.$color-primary-300;
+            text-shadow: 2px 2px 30px var.$color-primary-600;
+        }
+
+        &__text {
+            font-size: 1.25rem;
+            color: var.$color-neutro-100;
+        }
+    }
+
+    .animation {
+        &__sun {
+            position: fixed;
+            top: 20vh;
+            right: 10vw;
+            height: 25rem;
+            width: 25rem;
+
+            animation: move-sun 20s linear infinite;
+            z-index: 2;
+
+            @keyframes move-sun {
+                0% {
+                    transform: rotate(0) scale(1);
+                }
+
+                50% {
+                    transform: rotate(180deg) scale(1.25);
+                }
+
+                100% {
+                    transform: rotate(360deg) scale(1);
+                }
+            }
+        }
+
+        &__earth {
+            position: fixed;
+            top: 42vh;
+            right: 28vw;
+            width: 5rem;
+            filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.75));
+            animation: move-earth 10s linear infinite;
+
+            @keyframes move-earth {
+                0% {
+                    transform: translateX(0) scale(1);
+                    z-index: 3;
+                }
+
+                5% {
+                    transform: translateX(2vw) scale(1);
+                }
+
+                25% {
+                    transform: translateX(10vw) scale(1.25);
+                }
+
+                50% {
+                    transform: translateX(20vw) scale(1);
+                }
+
+                75% {
+                    transform: translateX(10vw) scale(0.75);
+                    z-index: 1;
+                }
+
+                95% {
+                    transform: translateX(2vw) scale(1);
+                }
+
+                100% {
+                    transform: translateX(0) scale(1);
+                }
+            }
+        }
+    }
+}

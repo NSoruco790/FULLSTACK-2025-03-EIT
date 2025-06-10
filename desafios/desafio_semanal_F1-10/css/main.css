@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: #212529;
+  text-decoration: none;
+}
+
+img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Super Plants";
+  src: url("../assets/fonts/super_plants.ttf");
+}
+.button {
+  width: 7vw;
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 4vh;
+  box-shadow: 2px 2px 30px -5px #343a40;
+  font-size: 1rem;
+  color: #f8f9fa;
+  cursor: pointer;
+}
+.button--primary {
+  background: linear-gradient(90deg, #f78d5f, #6a210f);
+}
+.button--primary:hover {
+  box-shadow: 2px 2px 30px -5px #c94223;
+}
+.button--success {
+  background: linear-gradient(90deg, #99dba3, #134119);
+}
+.button--success:hover {
+  box-shadow: 2px 2px 30px -5px #277931;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo__image {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 5vw;
+  border-radius: 100%;
+  box-shadow: 3px 3px 15px -5px #f8f9fa;
+  animation: move-logo 10s ease-in infinite;
+}
+.logo__title {
+  color: #f8f9fa;
+  font-size: 1rem;
+}
+@keyframes move-logo {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+}
+footer .copyright {
+  color: #f8f9fa;
+}
+
+header {
+  position: absolute;
+  top: 5vh;
+  left: 2.25vw;
+  height: 10vh;
+  width: 95vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  padding: 2rem;
+  border: 1px solid #f8f9fa;
+  border-right: none;
+  border-radius: 2vh 0 0 2vh;
+}
+nav .menu {
+  display: flex;
+  gap: 2.5vw;
+}
+nav .menu__item a {
+  font-size: 1.2em;
+  color: #fbad89;
+  text-shadow: 0 0 15px #212529;
+  transition: all 300ms;
+}
+nav .menu__item a:hover, nav .menu__item--active a {
+  color: #f8f9fa;
+}
+
+.home .banner {
+  position: relative;
+  left: 10vw;
+  height: 100vh;
+  width: 40vw;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vw;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.home .banner__title {
+  font-size: 2rem;
+  color: #fbad89;
+  text-shadow: 2px 2px 30px #e8582e;
+}
+.home .banner__text {
+  font-size: 1.25rem;
+  color: #f8f9fa;
+}
+.home .animation__sun {
+  position: fixed;
+  top: 20vh;
+  right: 10vw;
+  height: 25rem;
+  width: 25rem;
+  animation: move-sun 20s linear infinite;
+  z-index: 2;
+}
+@keyframes move-sun {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+.home .animation__earth {
+  position: fixed;
+  top: 42vh;
+  right: 28vw;
+  width: 5rem;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.75));
+  animation: move-earth 10s linear infinite;
+}
+@keyframes move-earth {
+  0% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
+  5% {
+    transform: translateX(2vw) scale(1);
+  }
+  25% {
+    transform: translateX(10vw) scale(1.25);
+  }
+  50% {
+    transform: translateX(20vw) scale(1);
+  }
+  75% {
+    transform: translateX(10vw) scale(0.75);
+    z-index: 1;
+  }
+  95% {
+    transform: translateX(2vw) scale(1);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}

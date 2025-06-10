@@ -1,0 +1,8 @@
+@use "./variables" as var;
+
+@mixin box-dimensions($height: 100%, $width: 100%, $padding: var.$spacing-md, $margin: 0) {
+    height: $height;
+    width: $width;
+    padding: $padding;
+    margin: $margin;
+}
