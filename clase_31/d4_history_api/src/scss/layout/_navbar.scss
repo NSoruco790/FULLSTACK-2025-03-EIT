@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+nav {
+    grid-area: navbar;
+
+    padding-left: var.$spacing-md;
+
+    .navbar {
+        display: flex;
+        gap: var.$spacing-md;
+
+        &__item {
+            color: var.$color-primary-900;
+            padding: var.$spacing-xs 0;
+
+            &--selected,
+            &:hover {
+                font-weight: var.$font-weight-bold;
+                border-top: 2px solid var.$color-primary-900;
+                border-bottom: 2px solid var.$color-primary-900;
+            }
+        }
+
+    }
+
+}
