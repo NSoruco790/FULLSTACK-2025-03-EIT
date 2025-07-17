@@ -1,0 +1,16 @@
+Servidor Web SPA:
+*****************
+
+Instrucciones:
+    1. Abrir una terminal integrada en VSCode
+    2. Ir a la carpeta raíz del proyecto donde esté index.html
+    3. Ejecutar el servidor con soporte para SPA:
+        npx serve -s .
+    4. Abrir el navegador en http://localhost:3000
+    Nota: La -s ó --single indica que se debe tratar el directorio como una aplicación de página única (SPA).
+
+Requisitos:
+    - Tener instalado Node.js en tu sistema operativo
+
+Aclaraciones:
+    - Las páginas SPA no funcionan en "Live Server"

@@ -1,0 +1,47 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var.$spacing-md;
+    width: 500px;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: var.$spacing-sm;
+    }
+
+    &__drop-zone {
+        display: flex;
+        flex-direction: column;
+        gap: var.$spacing-xs;
+
+        max-height: auto;
+        min-height: 75px;
+        width: 100%;
+        padding: var.$spacing-xs;
+
+        background-color: var.$color-primary-200;
+        border: 1px dashed var.$color-primary-700;
+        border-radius: 0.25rem;
+
+        &:hover {
+            background-color: var.$color-primary-300;
+            border-color: var.$color-primary-900;
+        }
+
+        color: var.$color-primary-800;
+        font-size: var.$font-size-sm;
+
+        &:empty {
+            justify-content: center;
+            align-items: center;
+
+            &::after {
+                content: "Arrastra y suelta tus archivos aquí";
+            }
+        }
+    }
+}
