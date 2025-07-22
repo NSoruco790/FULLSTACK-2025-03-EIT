@@ -24,6 +24,7 @@
         "enrutadores",
         "escalabilidad",
         "hasheada",
+        "inicialización",
         "killall",
         "mantenible",
         "mantenibilidad",
@@ -48,6 +49,7 @@
         "tabulación",
         "twilio",
         "vercel",
-        "virtuals"
+        "virtuals",
+        "youtube",
     ]
 }
