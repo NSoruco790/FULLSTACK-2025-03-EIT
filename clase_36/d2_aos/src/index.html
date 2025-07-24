@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack Engineer" />
+    <meta name="keywords" content="bootcamp, full stack, desarrollo web, HTML, CSS, JavaScript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+
+    <title>Mi App</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 class="header__title ">Trabajando con la librería AOS en Sass</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li class="menu__item menu__item--active"><a href="./index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-home">
+        <section>
+            <h2>Recursos de AOS</h2>
+
+            <article style="width: 1000px;">
+                <h3>Animaciones básicas</h3>
+
+                <div data-aos="fade-up">
+                    <img src="./assets/images/cars/img01.jpg" alt="Fade Up" />
+                    <p>Animación: fade-up</p>
+                </div>
+
+                <div data-aos="fade-down">
+                    <img src="./assets/images/cars/img02.jpg" alt="Fade Down" />
+                    <p>Animación: fade-down</p>
+                </div>
+
+                <div data-aos="fade-left">
+                    <img src="./assets/images/cars/img03.jpg" alt="Fade Left" />
+                    <p>Animación: fade-left</p>
+                </div>
+
+                <div data-aos="fade-right">
+                    <img src="./assets/images/cars/img04.jpg" alt="Fade Right" />
+                    <p>Animación: fade-right</p>
+                </div>
+            </article>
+
+            <article style="width: 1000px;">
+                <h3>Animaciones avanzadas</h3>
+
+                <div data-aos="zoom-in">
+                    <img src="./assets/images/cars/img05.jpg" alt="Zoom In" />
+                    <p>Animación: zoom-in</p>
+                </div>
+
+                <div data-aos="zoom-out">
+                    <img src="./assets/images/cars/img06.jpg" alt="Zoom Out" />
+                    <p>Animación: zoom-out</p>
+                </div>
+
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="./assets/images/cars/img07.jpg" alt="Flip Left" />
+                    <p>Animación: flip-left (duración 2000ms)</p>
+                </div>
+
+                <div data-aos="flip-up" data-aos-offset="200" data-aos-delay="300">
+                    <img src="./assets/images/cars/img08.jpg" alt="Flip Up" />
+                    <p>Animación: flip-up (delay 300ms, offset 200px)</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;2025 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

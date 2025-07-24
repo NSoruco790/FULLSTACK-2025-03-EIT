@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack Engineer" />
+    <meta name="keywords" content="bootcamp, full stack, desarrollo web, HTML, CSS, JavaScript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+
+    <title>Mi App</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 class="header__title ">Trabajando con la librería LightBox en Sass</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li class="menu__item menu__item--active"><a href="./index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-home">
+        <section>
+            <h2>Recursos de LightBox v2</h2>
+
+            <article class="gallery">
+                <a href="./assets/images/gallery/img01.jpg" data-lightbox="gallery" data-title="Foto 1">
+                    <img src="./assets/images/gallery/thumbs/img01_thumb.jpg" alt="Foto 1" />
+                </a>
+                <a href="./assets/images/gallery/img02.jpg" data-lightbox="gallery" data-title="Foto 2">
+                    <img src="./assets/images/gallery/thumbs/img02_thumb.jpg" alt="Foto 2" />
+                </a>
+                <a href="./assets/images/gallery/img02.jpg" data-lightbox="gallery" data-title="Foto 3">
+                    <img src="./assets/images/gallery/thumbs/img03_thumb.jpg" alt="Foto 3" />
+                </a>
+                <a href="./assets/images/gallery/img02.jpg" data-lightbox="gallery" data-title="Foto 4">
+                    <img src="./assets/images/gallery/thumbs/img04_thumb.jpg" alt="Foto 4" />
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;2025 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

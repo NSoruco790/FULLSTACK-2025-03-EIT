@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.page-home {
+    .carousel {
+        height: 300px !important;
+        overflow: hidden;
+    }
+
+
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
