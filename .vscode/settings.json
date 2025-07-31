@@ -89,9 +89,8 @@
   // ▼ Corrector Ortográfico ==================================================================
   "cSpell.words": [],
   // ▼ Git ====================================================================================
-  "git.enableSmartCommit": true,
   "git.autofetch": true,
-  "git.autofetchPeriod": 180,
+  "git.autofetchPeriod": 300,
   // ▼ Compilador Sass ========================================================================
   "liveSassCompile.settings.showOutputWindowOn": "Error",
   "liveSassCompile.settings.formats": [

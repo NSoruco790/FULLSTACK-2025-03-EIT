@@ -1,0 +1,37 @@
+.user-item {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem;
+    border: 1px solid #bbbbbb;
+
+    &--active {
+        border-left: 3px solid #28a745;
+    }
+
+    &--inactive {
+        border-left: 3px solid #dc3545;
+        opacity: 0.7;
+    }
+
+    &__name {
+        font-weight: bold;
+        padding-bottom: 0.25rem;
+    }
+
+    &__email {
+        color: #868686;
+        padding-bottom: 0.5rem;
+    }
+
+    &__age,
+    &__status,
+    &__admin {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    &__admin {
+        align-self: flex-end;
+    }
+}

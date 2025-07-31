@@ -1,0 +1,12 @@
+.user-list {
+    width: 800px;
+    border: 1px solid #bbbbbb;
+    border-radius: 0.25rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+}
