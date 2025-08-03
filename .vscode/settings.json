@@ -1,7 +1,9 @@
 {
   // ▼ General ===============================================================================
   "files.autoSave": "off",
-  "scm.autoReveal": false,
+  "scm.autoReveal": true,
+  "scm.defaultViewMode": "tree",
+  "scm.alwaysShowRepositories": true,
   // ▼ Interfaz de Usuario ===================================================================
   "window.zoomLevel": 0,
   "workbench.tree.enableStickyScroll": false,
