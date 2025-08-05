@@ -5,7 +5,7 @@ import paths from "../../utils/paths";
 import "./home.scss";
 
 const Home = () => {
-    const [count, setCount] = useState(0);
+    const [ count, setCount ] = useState(0);
 
     const handleIncrement = () => {
         setCount(count + 1);
@@ -31,11 +31,9 @@ const Home = () => {
                 Esta es una página de ejemplo que demuestra el uso de componentes de texto y botones.
             </TextDescription>
 
-            <img
-                className="home__image"
+            <img className="home__image"
                 src={`${paths.images}/img01.jpg`}
-                alt="Imagen de coche"
-            />
+                alt="Imagen de coche"/>
         </div>
     );
 };

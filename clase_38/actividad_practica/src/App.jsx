@@ -4,7 +4,7 @@ import "./app.scss";
 import { users } from "./data/users";
 
 const UserListItem = (props) => {
-    const { name, email, age, isActive, isAdmin } = props.user;
+    const { name, email, age, isActive = false, isAdmin = false } = props.user;
 
     return (
         <div className={`user-item ${isActive ? "user-item--active" : "user-item--inactive"}`}>
@@ -21,7 +21,6 @@ const UserListItem = (props) => {
 
 UserListItem.propTypes = {
     user: PropTypes.shape({
-        id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
         email: PropTypes.string.isRequired,
         age: PropTypes.number.isRequired,
@@ -31,7 +30,7 @@ UserListItem.propTypes = {
 };
 
 const UserList = (props) => {
-    const { users } = props;
+    const { users = [] } = props;
 
     return (
         <div className="user-list">

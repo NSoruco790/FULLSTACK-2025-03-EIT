@@ -25,11 +25,10 @@ const StudentListItem = (props) => {
 
 StudentListItem.propTypes = {
     student: PropTypes.shape({
-        id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
         age: PropTypes.number.isRequired,
         email: PropTypes.string.isRequired,
-        phone: PropTypes.bool.isRequired,
+        phone: PropTypes.string.isRequired,
         instagram: PropTypes.string,
         isPresent: PropTypes.bool.isRequired,
     }).isRequired,
@@ -41,17 +40,22 @@ const StudentList = (props) => {
     return (
         <div className="student-list">
             {students.map((student) => (
-                <StudentListItem
-                    key={student.id}
-                    student={student}
-                />
+                <StudentListItem key={student.id} student={student} />
             ))}
         </div>
     );
 };
 
 StudentList.propTypes = {
-    students: PropTypes.arrayOf(PropTypes.object).isRequired,
+    students: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        age: PropTypes.number.isRequired,
+        email: PropTypes.string.isRequired,
+        phone: PropTypes.string.isRequired,
+        instagram: PropTypes.string,
+        isPresent: PropTypes.bool.isRequired,
+    })).isRequired,
 };
 
 const Student = () => {
@@ -73,7 +77,7 @@ const Student = () => {
                 <p>Presentes: {getPresentStudents()}</p>
                 <p>Ausentes: {getAbsentStudents()}</p>
             </div>
-            <StudentList students={students}/>
+            <StudentList students={students} />
         </div>
     );
 };
@@ -81,7 +85,7 @@ const Student = () => {
 const App = () => {
     return (
         <div className="app">
-            <Student/>
+            <Student />
         </div>
     );
 };

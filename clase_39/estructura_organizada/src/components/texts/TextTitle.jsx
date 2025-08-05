@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 import Text from "./Text";
 
-const TextTitle = ({ children, size = "md", weight = "regular", ...restProps }) => {
+const TextTitle = (props) => {
+    const { children, size = "md", weight = "regular", ...restProps } = props;
+
     return (
-        <Text
-            size={size}
+        <Text size={size}
             variant="title"
             weight={weight}
-            {...restProps}
-        >
+            {...restProps}>
             {children}
         </Text>
     );
@@ -16,8 +16,8 @@ const TextTitle = ({ children, size = "md", weight = "regular", ...restProps }) 
 
 TextTitle.propTypes = {
     children: PropTypes.node.isRequired,
-    size: PropTypes.oneOf(["md", "lg", "xl", "xxl"]),
-    weight: PropTypes.oneOf(["regular", "bold"]),
+    size: PropTypes.oneOf([ "md", "lg", "xl", "xxl" ]),
+    weight: PropTypes.oneOf([ "regular", "bold" ]),
 };
 
 export default TextTitle;

@@ -1,5 +1,5 @@
 // Definición del componente funcional App
-function App () {
+const App = () => {
     // Variables de JavaScript se pueden usar dentro del JSX usando {}
     const firstName = "Juan";
     const a = 5;
@@ -32,11 +32,9 @@ function App () {
             {/* <h3>Texto comentado</h3> */}
 
             {/* Imagen local (recomendado moverla a /public y usar src="/images/cars/img01.jpg") */}
-            <img
-                src="/images/img01.jpg" // Esto está en la carpeta /public/images
+            <img src="/images/img01.jpg" // Esto está en la carpeta /public/images
                 alt="Auto"
-                width="300"
-            />
+                width="300"/>
         </div>
     );
 };

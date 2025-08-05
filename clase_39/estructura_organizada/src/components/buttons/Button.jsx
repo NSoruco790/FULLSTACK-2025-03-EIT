@@ -6,10 +6,7 @@ const Button = ({ children, onClick, size = "md", variant = null, ...restProps }
     const classes = `button button--${size} ${variantClass}`;
 
     return (
-        <button
-            className={classes}
-            onClick={onClick}
-            {...restProps}>
+        <button className={classes} onClick={onClick} {...restProps}>
             {children}
         </button>
     );
@@ -18,8 +15,8 @@ const Button = ({ children, onClick, size = "md", variant = null, ...restProps }
 Button.propTypes = {
     children: PropTypes.node.isRequired,
     onClick: PropTypes.func.isRequired,
-    variant: PropTypes.oneOf(["confirm", "danger"]),
-    size: PropTypes.oneOf(["sm", "md", "lg"]),
+    size: PropTypes.oneOf([ "sm", "md", "lg" ]).isRequired,
+    variant: PropTypes.oneOf([ "confirm", "danger" ]).isRequired,
 };
 
 export default Button;

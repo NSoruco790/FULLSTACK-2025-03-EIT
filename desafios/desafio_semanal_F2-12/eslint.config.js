@@ -16,7 +16,7 @@ export default [
         ],
     },
     {
-        files: ["**/*.js", "**/*.jsx"],
+        files: [ "**/*.js", "**/*.jsx" ],
         languageOptions: {
             ecmaVersion: "latest",
             sourceType: "module",
@@ -37,7 +37,7 @@ export default [
         },
         settings: {
             react: {
-                version: "detect",
+                version: "18.3.1",
             },
         },
         rules: {
@@ -46,48 +46,55 @@ export default [
             ...react.configs.recommended.rules,
             ...reactHooks.configs.recommended.rules,
 
-            // ▼ Reglas de React ===============================================================
+            // ▼ Reglas de React  ==============================================================
             "react/react-in-jsx-scope": "off",
+            "react-refresh/only-export-components": [ "warn", { allowConstantExport: true }],
+            "react/jsx-max-props-per-line": [ "error", { "maximum": 3 }],
+            "react/jsx-first-prop-new-line": [ "error", "never" ],
+            "react/jsx-wrap-multilines": "off",
+            "react/jsx-closing-bracket-location": [ "error", "after-props" ],
+            "jsx-quotes": [ "error", "prefer-double" ],
+
+            // ▼ Reglas de React PropTypes (con prioridad) =====================================
             "react/prop-types": "error",
+            "react/sort-prop-types": "error",
             "react/no-unused-prop-types": "error",
-            "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+            "react/forbid-prop-types": "error",
 
-            // ▼ Reglas de formato básico ======================================================
-            "semi": ["error", "always"],
-            "quotes": ["error", "double"],
-            "jsx-quotes": ["error", "prefer-double"],
-            "indent": ["error", 4],
-            "eol-last": ["error", "always"],
-            "no-trailing-spaces": "error",
-            "no-multiple-empty-lines": ["error", { "max": 1 }],
-
-            // ▼ Reglas de espaciado ===========================================================
+            // ▼ Reglas de Formato y Sintaxis ==================================================
+            "semi": [ "error", "always" ],
+            "quotes": [ "error", "double" ],
+            "indent": [ "error", 4, { "StaticBlock": { "body": 4 } }],
+            "camelcase": [ 2, { "properties": "always" }],
             "no-multi-spaces": "error",
-            "space-infix-ops": "error",
-            "space-before-blocks": "error",
-            "space-before-function-paren": ["error", "always"],
-            "space-in-parens": ["error", "never"],
-            "keyword-spacing": ["error", { "before": true, "after": true }],
-            "spaced-comment": ["error", "always"],
+            "no-trailing-spaces": [ "error", { "ignoreComments": true }],
+            "eol-last": [ "error", "never" ],
+            "no-multiple-empty-lines": [ "error", { "max": 1, "maxEOF": 1, "maxBOF": 1 }],
 
-            // ▼ Reglas de objetos y arrays ====================================================
-            "object-curly-spacing": ["error", "always"],
-            "array-bracket-spacing": ["error", "never"],
-            "comma-spacing": ["error", { "before": false, "after": true }],
-            "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
-            "comma-dangle": ["error", "always-multiline"],
+            // ▼ Reglas de Espaciado y Puntuación ==============================================
+            "comma-dangle": [ "error", "always-multiline" ],
+            "comma-spacing": [ "error", { "before": false, "after": true }],
+            "arrow-parens": [ "error", "always" ],
+            "no-spaced-func": "error",
 
-            // ▼ Reglas de operadores ==========================================================
-            "operator-linebreak": ["error", "before"],
+            // ▼ Reglas de Variables y Constantes ==============================================
+            "prefer-const": [ "error", { "destructuring": "any", "ignoreReadBeforeAssign": false }],
+            "no-unused-vars": [ "error", { "args": "after-used" }],
 
-            // ▼ Reglas de variables y funciones ===============================================
-            "no-unused-vars": ["warn", {
-                argsIgnorePattern: "^_",
-                varsIgnorePattern: "React",
-            }],
+            // ▼ Reglas de Funciones ===========================================================
+            "func-style": [ "error", "expression" ],
+            "max-statements": [ "error", 25 ],
 
-            // ▼ Reglas de debugging y desarrollo ==============================================
-            "no-console": "warn",
+            // ▼ Reglas de Estructuras de Datos ================================================
+            "array-bracket-spacing": [ "error", "always", { "singleValue": false, "arraysInArrays": true, "objectsInArrays": false }],
+            "object-curly-spacing": [ "error", "always" ],
+
+            // ▼ Reglas de Configuración y Entorno =============================================
+            "global-require": "off",
+            "no-process-env": "off",
+            "no-undef": "off",
+            "sort-keys": "off",
+            "sort-vars": "off",
         },
     },
 ];
