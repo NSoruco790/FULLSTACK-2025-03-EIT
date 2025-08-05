@@ -1,0 +1,62 @@
+@use "../../scss/variables" as var;
+
+.text {
+    color: var.$color-neutro-800;
+
+    &--xxs {
+        font-size: var.$font-size-xxs;
+        line-height: var.$line-height-xs;
+    }
+
+    &--xs {
+        font-size: var.$font-size-sm;
+        line-height: var.$line-height-sm;
+    }
+
+    &--sm {
+        font-size: var.$font-size-sm;
+        line-height: var.$line-height-md;
+    }
+
+    &--md {
+        font-size: var.$font-size-md;
+        line-height: var.$line-height-md;
+    }
+
+    &--lg {
+        font-size: var.$font-size-lg;
+        line-height: var.$line-height-lg;
+    }
+
+    &--xl {
+        font-size: var.$font-size-xl;
+        line-height: var.$line-height-lg;
+    }
+
+    &--xxl {
+        font-size: var.$font-size-xxl;
+        line-height: var.$line-height-xl;
+    }
+
+    &--light {
+        font-weight: var.$font-weight-light;
+    }
+
+    &--regular {
+        font-weight: var.$font-weight-regular;
+    }
+
+    &--bold {
+        font-weight: var.$font-weight-bold;
+    }
+
+    &--title {
+        color: var.$color-neutro-900;
+        font-weight: var.$font-weight-bold;
+    }
+
+    &--description {
+        color: var.$color-neutro-700;
+        font-weight: var.$font-weight-regular;
+    }
+}
