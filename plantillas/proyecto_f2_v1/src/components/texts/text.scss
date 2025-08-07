@@ -1,62 +1,40 @@
-@use "../../scss/variables" as var;
+@use "@/scss/variables" as var;
 
 .text {
-    color: var.$color-neutro-800;
+    font-weight: var.$font-weight-regular;
 
-    &--xxs {
-        font-size: var.$font-size-xxs;
-        line-height: var.$line-height-xs;
-    }
-
-    &--xs {
-        font-size: var.$font-size-sm;
-        line-height: var.$line-height-sm;
-    }
-
-    &--sm {
-        font-size: var.$font-size-sm;
-        line-height: var.$line-height-md;
-    }
-
-    &--md {
-        font-size: var.$font-size-md;
-        line-height: var.$line-height-md;
-    }
-
-    &--lg {
-        font-size: var.$font-size-lg;
-        line-height: var.$line-height-lg;
-    }
-
-    &--xl {
-        font-size: var.$font-size-xl;
-        line-height: var.$line-height-lg;
-    }
-
-    &--xxl {
+    &--h1 {
+        color: var.$color-neutro-900;
         font-size: var.$font-size-xxl;
+        font-weight: var.$font-weight-bold;
+        line-height: var.$line-height-xxl;
+    }
+
+    &--h2 {
+        color: var.$color-neutro-800;
+        font-size: var.$font-size-xl;
+        font-weight: var.$font-weight-bold;
         line-height: var.$line-height-xl;
     }
 
-    &--light {
-        font-weight: var.$font-weight-light;
-    }
-
-    &--regular {
-        font-weight: var.$font-weight-regular;
-    }
-
-    &--bold {
+    &--h3 {
+        color: var.$color-neutro-800;
+        font-size: var.$font-size-lg;
         font-weight: var.$font-weight-bold;
+        line-height: var.$line-height-lg;
     }
 
-    &--title {
-        color: var.$color-neutro-900;
-        font-weight: var.$font-weight-bold;
-    }
-
-    &--description {
+    &--p {
         color: var.$color-neutro-700;
+        font-size: var.$font-size-md;
         font-weight: var.$font-weight-regular;
+        line-height: var.$line-height-md;
+    }
+
+    &--span {
+        color: var.$color-neutro-700;
+        font-size: var.$font-size-xs;
+        font-weight: var.$font-weight-light;
+        line-height: var.$line-height-xs;
     }
 }

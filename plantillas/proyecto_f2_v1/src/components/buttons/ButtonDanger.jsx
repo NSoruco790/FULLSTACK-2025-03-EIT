@@ -1,9 +1,14 @@
 import PropTypes from "prop-types";
 import Button from "./Button";
 
-const ButtonDanger = ({ children, onClick, size = "md", ...restProps }) => {
+const ButtonDanger = (props) => {
+    const { children, size = "md", ...restProps } = props;
+
     return (
-        <Button size={size} variant="danger" onClick={onClick} {...restProps}>
+        <Button
+            size={size}
+            variant="danger"
+            {...restProps}>
             {children}
         </Button>
     );
@@ -11,8 +16,7 @@ const ButtonDanger = ({ children, onClick, size = "md", ...restProps }) => {
 
 ButtonDanger.propTypes = {
     children: PropTypes.node.isRequired,
-    onClick: PropTypes.func.isRequired,
-    size: PropTypes.oneOf(["sm", "md", "lg"]),
+    size: PropTypes.oneOf([ "sm", "md", "lg" ]),
 };
 
 export default ButtonDanger;

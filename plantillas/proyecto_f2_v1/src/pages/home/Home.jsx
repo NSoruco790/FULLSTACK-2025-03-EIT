@@ -1,10 +1,12 @@
-import TextTitle from "../../components/texts/TextTitle";
+import { Text } from "@/components/texts";
+import paths from "@/utils/paths";
 import "./home.scss";
 
 const Home = () => {
     return (
         <div className="home">
-            <TextTitle size="xxl">Página de Inicio</TextTitle>
+            <img src={`${paths.images}/logo.png`} alt="Logo" />
+            <Text variant="h1">Página de Inicio</Text>
         </div>
     );
 };

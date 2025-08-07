@@ -1,8 +1,8 @@
-import Home from "./pages/home/Home";
+import Home from "@/pages/home/Home";
 
 const App = () => {
     return (
-        <div className="app">
+        <div>
             <Home/>
         </div>
     );

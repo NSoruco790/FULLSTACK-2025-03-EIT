@@ -1,23 +1,48 @@
 import PropTypes from "prop-types";
 import "./text.scss";
 
-const Text = ({ children, size = "md", variant = null, weight = "regular", ...restProps }) => {
-    const variantClass = variant ? `text--${variant}` : "";
-    const weightClass = weight ? `text--${weight}` : "";
-    const classes = `text text--${size} ${variantClass} ${weightClass}`;
+const Text = ({ children, className, variant, ...restProps }) => {
+    const classes = `text text--${variant} ${className ?? ""}`;
 
     return (
-        <span className={classes} {...restProps}>
-            {children}
-        </span>
+        <>
+            {variant === "h1" && (
+                <h1 className={classes} {...restProps}>
+                    {children}
+                </h1>
+            )}
+
+            {variant === "h2" && (
+                <h2 className={classes} {...restProps}>
+                    {children}
+                </h2>
+            )}
+
+            {variant === "h3" && (
+                <h3 className={classes} {...restProps}>
+                    {children}
+                </h3>
+            )}
+
+            {variant === "p" && (
+                <p className={classes} {...restProps}>
+                    {children}
+                </p>
+            )}
+
+            {variant === "span" && (
+                <span className={classes} {...restProps}>
+                    {children}
+                </span>
+            )}
+        </>
     );
 };
 
 Text.propTypes = {
     children: PropTypes.node.isRequired,
-    variant: PropTypes.oneOf(["title", "description"]),
-    size: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl", "xxl"]),
-    weight: PropTypes.oneOf(["light", "regular", "bold"]),
+    className: PropTypes.string,
+    variant: PropTypes.oneOf([ "h1", "h2", "h3", "p", "span" ]).isRequired,
 };
 
 export default Text;

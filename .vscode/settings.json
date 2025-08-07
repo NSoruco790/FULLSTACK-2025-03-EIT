@@ -99,7 +99,7 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "~/../css",
+      "savePath": "/../css",
       "generateMap": false
     }
   ],

@@ -1,7 +1,7 @@
+import { ButtonDanger, ButtonPrimary } from "@/components/buttons";
+import { Text } from "@/components/texts";
+import paths from "@/utils/paths";
 import { useState } from "react";
-import { ButtonConfirm, ButtonDanger } from "../../components/buttons";
-import { TextDescription, TextTitle } from "../../components/texts";
-import paths from "../../utils/paths";
 import "./home.scss";
 
 const Home = () => {
@@ -16,24 +16,20 @@ const Home = () => {
             setCount(count - 1);
         }
     };
-
     return (
         <div className="home">
-            <TextTitle size="xxl">Página de Inicio</TextTitle>
+            <img src={`${paths.images}/logo.png`} alt="Logo" />
+            <Text variant="h1">Página de Inicio</Text>
 
             <div className="home__counter">
-                <ButtonConfirm onClick={handleIncrement}>Incrementar</ButtonConfirm>
-                <TextTitle size="md">{count}</TextTitle>
+                <ButtonPrimary onClick={handleIncrement}>Incrementar</ButtonPrimary>
+                <Text variant="p">{count}</Text>
                 <ButtonDanger onClick={handleDecrement}>Decrementar</ButtonDanger>
             </div>
 
-            <TextDescription size="md">
+            <Text variant="span">
                 Esta es una página de ejemplo que demuestra el uso de componentes de texto y botones.
-            </TextDescription>
-
-            <img className="home__image"
-                src={`${paths.images}/img01.jpg`}
-                alt="Imagen de coche"/>
+            </Text>
         </div>
     );
 };
