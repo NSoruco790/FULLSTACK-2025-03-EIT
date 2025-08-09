@@ -27,9 +27,17 @@
 
     &--danger {
         background-color: var.$color-danger-500;
+
+        &:hover {
+            background-color: var.$color-danger-700;
+        }
     }
 
-    &--confirm {
-        background-color: var.$color-confirm-500;
+    &--primary {
+        background-color: var.$color-primary-700;
+
+        &:hover {
+            background-color: var.$color-primary-800;
+        }
     }
 }

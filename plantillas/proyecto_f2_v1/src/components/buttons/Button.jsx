@@ -15,7 +15,7 @@ Button.propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string,
     size: PropTypes.oneOf([ "sm", "md", "lg" ]).isRequired,
-    variant: PropTypes.oneOf([ "confirm", "danger" ]).isRequired,
+    variant: PropTypes.oneOf([ "danger", "primary" ]).isRequired,
 };
 
 export default Button;

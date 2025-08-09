@@ -1,0 +1,44 @@
+@use "@/scss/variables" as var;
+
+.effect-dependency-problem {
+    display: flex;
+    flex-direction: column;
+    gap: var.$spacing-md;
+
+    background-color: rgb(241, 241, 233);
+    border: 1px solid #000;
+    padding: var.$spacing-md;
+
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .result {
+        align-self: center;
+        font-size: 1.5rem;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .success {
+        color: green;
+    }
+
+    .note {
+        color: blue;
+    }
+}
+
+.explanation {
+    text-align: justify;
+}
+
+code {
+    color: #073985;
+}

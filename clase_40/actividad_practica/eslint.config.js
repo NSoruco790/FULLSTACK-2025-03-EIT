@@ -36,6 +36,14 @@ export default [
             react: {
                 version: "18.3.1",
             },
+            "import/resolver": {
+                alias: {
+                    map: [
+                        [ "@", "./src" ],
+                    ],
+                    extensions: [ ".js", ".jsx", ".json" ],
+                },
+            },
         },
         rules: {
             // ▼ Reglas base de ESLint =========================================================

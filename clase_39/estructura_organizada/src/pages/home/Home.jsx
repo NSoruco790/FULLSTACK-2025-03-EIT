@@ -1,6 +1,6 @@
+import logo from "@/assets/images/logo.png";
 import { ButtonDanger, ButtonPrimary } from "@/components/buttons";
 import { Text } from "@/components/texts";
-import paths from "@/utils/paths";
 import { useState } from "react";
 import "./home.scss";
 
@@ -18,7 +18,7 @@ const Home = () => {
     };
     return (
         <div className="home">
-            <img src={`${paths.images}/logo.png`} alt="Logo" />
+            <img src={logo} alt="Logo" />
             <Text variant="h1">Página de Inicio</Text>
 
             <div className="home__counter">

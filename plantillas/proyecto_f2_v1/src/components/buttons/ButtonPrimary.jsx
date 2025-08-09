@@ -7,7 +7,7 @@ const ButtonPrimary = (props) => {
     return (
         <Button
             size={size}
-            variant="confirm"
+            variant="primary"
             {...restProps}>
             {children}
         </Button>

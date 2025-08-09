@@ -21,30 +21,29 @@ const StateSyncProblem1 = () => {
 
     return (
         <div className="state-sync-problem">
-            <div className="content">
-                <h3 className="title">Problema de Sincronismo con useState</h3>
-                <span className="result">Contador: {count}</span>
-
-                <div>
-                    <button onClick={demonstrateStateUpdateProblem}>Demostrar problema</button>
-                    <i className="note"> Revisa la consola para ver los logs </i>
-                </div>
-
-                <button onClick={() => setCount(0)}>Resetear</button>
-            </div>
+            <h3 className="title">
+                <span>Problema de sincronización con useState</span>
+                <span>Acceso inmediato al estado</span>
+            </h3>
+            <span className="result">Contador: {count}</span>
 
             <div>
-                <p className="explanation">
-                    <b>Explicación del problema:</b> React no actualiza el estado de forma
+                <button onClick={demonstrateStateUpdateProblem}>Demostrar problema</button>
+                <i className="note"> Revisa la consola para ver los logs </i>
+            </div>
+
+            <button onClick={() => setCount(0)}>Resetear</button>
+
+            <p className="explanation">
+                <b>Explicación del problema:</b> React no actualiza el estado de forma
                     inmediata. Si se usa <code>setCount(count + 1)</code> y luego se accede
                     a <code>count</code>, se obtendrá el valor anterior.
-                </p>
+            </p>
 
-                <p className="explanation">
-                    <b>Solución:</b> Si necesitas manipular o reaccionar al nuevo valor, se
+            <p className="explanation">
+                <b>Solución:</b> Si necesitas manipular o reaccionar al nuevo valor, se
                     debe emplear un <code>useEffect</code> para detectar cambios.
-                </p>
-            </div>
+            </p>
         </div>
     );
 };

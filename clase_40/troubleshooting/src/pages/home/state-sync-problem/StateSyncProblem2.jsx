@@ -25,38 +25,37 @@ const StateSyncProblem2 = () => {
 
     return (
         <div className="state-sync-problem">
-            <div className="content">
-                <h3 className="title">Problema de Sincronismo con useState 2</h3>
-                <span className="result">Contador: {count}</span>
+            <h3 className="title">
+                <span>Problema de sincronización con useState</span>
+                <span>Actualización Multiple</span>
+            </h3>
+            <span className="result">Contador: {count}</span>
 
-                <div>
-                    <button onClick={incrementWrong}>Incrementar x3</button>
-                    <b className="error"> (INCORRECTO) </b>
-                    <i>Resultado: solo incrementa 1 vez</i>
-                </div>
-
-                <div>
-                    <button onClick={incrementCorrect}>Incrementar x3</button>
-                    <b className="success"> (CORRECTO) </b>
-                    <i>Resultado: incrementa 3 veces</i>
-                </div>
-
-                <button onClick={() => setCount(0)}>Resetear</button>
+            <div>
+                <button onClick={incrementWrong}>Incrementar x3</button>
+                <b className="error"> (INCORRECTO) </b>
+                <i>Resultado: solo incrementa 1 vez</i>
             </div>
 
             <div>
-                <p className="explanation">
-                    <b>Explicación del problema: </b>React agrupa actualizaciones de estado para
+                <button onClick={incrementCorrect}>Incrementar x3</button>
+                <b className="success"> (CORRECTO) </b>
+                <i>Resultado: incrementa 3 veces</i>
+            </div>
+
+            <button onClick={() => setCount(0)}>Resetear</button>
+
+            <p className="explanation">
+                <b>Explicación del problema: </b>React agrupa actualizaciones de estado para
                     optimizar el rendimiento. Si se usa <code>setCount(count + 1)</code> varias
                     veces seguidas, todas usan el mismo valor base, lo que puede causar problemas.
-                </p>
+            </p>
 
-                <p className="explanation">
-                    <b>Solución:</b> Usar el callback de actualización de la siguiente manera:
-                    <code> setCount(prevCount =&gt; prevCount + 1) </code>. Así cada actualización
+            <p className="explanation">
+                <b>Solución:</b> Usar el callback de actualización de la siguiente manera:
+                <code> setCount(prevCount =&gt; prevCount + 1) </code>. Así cada actualización
                     parte del valor más reciente del estado.
-                </p>
-            </div>
+            </p>
         </div>
     );
 };

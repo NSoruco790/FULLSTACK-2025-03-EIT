@@ -1,22 +1,22 @@
 import PropTypes from "prop-types";
 import Button from "./Button";
 
-const ButtonPrimary = (props) => {
+const ButtonDanger = (props) => {
     const { children, size = "md", ...restProps } = props;
 
     return (
         <Button
             size={size}
-            variant="primary"
+            variant="danger"
             {...restProps}>
             {children}
         </Button>
     );
 };
 
-ButtonPrimary.propTypes = {
+ButtonDanger.propTypes = {
     children: PropTypes.node.isRequired,
     size: PropTypes.oneOf([ "sm", "md", "lg" ]),
 };
 
-export default ButtonPrimary;
+export default ButtonDanger;
