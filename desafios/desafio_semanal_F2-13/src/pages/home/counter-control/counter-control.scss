@@ -1,0 +1,6 @@
+@use "../../../scss/variables" as var;
+
+.counter-control {
+    display: flex;
+    gap: var.$spacing-md;
+}

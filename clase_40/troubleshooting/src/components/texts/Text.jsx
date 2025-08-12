@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./text.scss";
 
-const Text = ({ children, className, variant, ...restProps }) => {
+const Text = ({ children, className, variant="p", ...restProps }) => {
     const classes = `text text--${variant} ${className ?? ""}`;
 
     return (
