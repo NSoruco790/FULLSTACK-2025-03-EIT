@@ -3,9 +3,9 @@ import "./header.scss";
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <Text className="header__title" variant="h1">Mi App</Text>
-        </div>
+        </header>
     );
 };
 

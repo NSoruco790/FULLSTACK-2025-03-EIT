@@ -2,27 +2,30 @@ import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar-item.scss";
 
-const NavbarItem = ({ path, label, isDynamic = false }) => {
+const NavbarItem = (props) => {
+    const { item, isDynamic = false } = props;
     const location = useLocation();
 
     const getClassName = () => {
         const isActive = isDynamic
-            ? location.pathname.startsWith(path)
-            : location.pathname === path;
+            ? location.pathname.startsWith(item.path)
+            : location.pathname === item.path;
 
         return `navbar-item ${isActive ? "navbar-item--active" : ""}`;
     };
 
     return (
-        <li className={getClassName(path)}>
-            <Link to={path}>{label}</Link>
+        <li className={getClassName()}>
+            <Link to={item.path}>{item.label}</Link>
         </li>
     );
 };
 
 NavbarItem.propTypes = {
-    path: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
+    item: PropTypes.shape({
+        path: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+    }).isRequired,
     isDynamic: PropTypes.bool,
 };
 

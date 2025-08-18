@@ -3,11 +3,11 @@ import "./footer.scss";
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <Text className="footer__copyright" variant="p">
                 &copy;2025 Todos los derechos reservados
             </Text>
-        </div>
+        </footer>
     );
 };
 

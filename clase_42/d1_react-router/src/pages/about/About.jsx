@@ -1,4 +1,4 @@
-import Button from "@/components/buttons/Button";
+import { ButtonPrimary } from "@/components/buttons";
 import { Text } from "@/components/texts";
 import { useLocation, useSearchParams } from "react-router-dom";
 import "./about.scss";
@@ -26,8 +26,8 @@ const About = () => {
             <Text variant="h3">Demostración del uso de useSearchParams</Text>
             <Text variant="p">Nombre: {searchParams.get("name") || ""}</Text>
             <Text variant="p">Edad: {searchParams.get("age") || ""}</Text>
-            <Button variant="primary" size="md" onClick={updateParams}>Actualizar Parámetros</Button>
-            <Button variant="primary" size="md" onClick={clearParams}>Limpiar Parámetros</Button>
+            <ButtonPrimary onClick={updateParams}>Actualizar Parámetros</ButtonPrimary>
+            <ButtonPrimary onClick={clearParams}>Limpiar Parámetros</ButtonPrimary>
         </div>
     );
 };

@@ -5,9 +5,9 @@ const Main = (props) => {
     const { children } = props;
 
     return (
-        <div className="main">
+        <main className="main">
             {children}
-        </div>
+        </main>
     );
 };
 

@@ -1,4 +1,4 @@
-export const navbarItems = [
+export const items = [
     {
         path: "/",
         label: "Inicio",
