@@ -23,23 +23,25 @@
         color: var.$color-neutro-700;
     }
 
-    &--success &__message,
-    &--success &__icon {
-        color: var.$color-success-700;
-    }
-
-    &--danger &__message,
-    &--danger &__icon {
-        color: var.$color-danger-700;
-    }
-
+    // Estilos para success
     &--success &__content {
         background-color: var.$color-success-100;
         border-color: var.$color-success-500;
     }
 
+    &--success &__message,
+    &--success &__icon {
+        color: var.$color-success-700;
+    }
+
+    // Estilos para danger
     &--danger &__content {
         background-color: var.$color-danger-100;
         border-color: var.$color-danger-500;
+    }
+
+    &--danger &__message,
+    &--danger &__icon {
+        color: var.$color-danger-700;
     }
 }
