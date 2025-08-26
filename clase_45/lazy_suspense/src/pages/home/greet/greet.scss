@@ -1,0 +1,7 @@
+@use "@/scss/variables" as var;
+
+.greet {
+    color: var.$color-neutro-100;
+    background-color: var.$color-primary-500;
+    border-radius: 0.5rem;
+}
