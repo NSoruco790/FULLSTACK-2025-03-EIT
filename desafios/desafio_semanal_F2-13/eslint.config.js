@@ -59,6 +59,7 @@ export default [
             "react/jsx-wrap-multilines": "off",
             "react/jsx-closing-bracket-location": [ "error", "after-props" ],
             "jsx-quotes": [ "error", "prefer-double" ],
+            "react-hooks/exhaustive-deps": "off",
 
             // ▼ Reglas de React PropTypes (con prioridad) =====================================
             "react/prop-types": "error",
