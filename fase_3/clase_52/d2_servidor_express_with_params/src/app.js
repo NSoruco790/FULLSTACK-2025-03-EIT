@@ -14,10 +14,9 @@ const HOST = process.env.HOST;
 // Middleware: convierte el cuerpo JSON de la solicitud y lo guarda en `req.body`.
 app.use(express.json());
 
-// Endpoint para obtener los coches. URL: http://localhost:3000/api/cars?brand=Fiat&year=2021
+// Endpoint para obtener los coches con filtros. URL: http://localhost:3000/api/cars?brand=Fiat&year=2021
 app.get("/api/cars", (req, res) => {
     const { model, year } = req.query;
-    console.log(req.headers);
 
     let filteredCars = [...cars];
 
