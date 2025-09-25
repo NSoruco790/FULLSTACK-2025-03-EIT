@@ -1,0 +1,58 @@
+[
+	{
+		"id": 1,
+		"brand": "Ford",
+		"model": "Ranger",
+		"year": 2023,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 2,
+		"brand": "Ford",
+		"model": "Ranger Limited",
+		"year": 2024,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 3,
+		"brand": "Fiat",
+		"model": "Toro",
+		"year": 2021,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 4,
+		"brand": "Chevrolet",
+		"model": "S10",
+		"year": 2019,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 5,
+		"brand": "Chevrolet",
+		"model": "corsa",
+		"year": 2018,
+		"thumbnail": "image_54872_24092025_223521.jpg"
+	},
+	{
+		"id": 6,
+		"brand": "Fiat",
+		"model": 1,
+		"year": 2009,
+		"thumbnail": "default.jpg"
+	},
+	{
+		"id": 7,
+		"brand": "Fiat",
+		"model": "uno",
+		"year": 2012,
+		"thumbnail": "image_89004_24092025_222716.jpg"
+	},
+	{
+		"id": 8,
+		"brand": "Renault",
+		"model": "Sandero",
+		"year": 2013,
+		"thumbnail": "default.jpg"
+	}
+]
