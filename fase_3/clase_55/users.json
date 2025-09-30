@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Juan",
+        "surname": "García",
+        "age": 20,
+        "email": "juan@gmail.com",
+        "phone": 2615800045,
+        "hobbies": ["Nadar"]
+    },
+    {
+        "name": "Lorena",
+        "surname": "Medina",
+        "age": 30,
+        "email": "lore@hotmail.com",
+        "phone": 3516112244,
+        "hobbies": ["Bailar"]
+    },
+    {
+        "name": "Maria",
+        "surname": "Torres",
+        "age": 25,
+        "email": "mary2024@yahoo.com",
+        "phone": 1157742122,
+        "hobbies": ["Caminar", "Cantar"]
+    },
+    {
+        "name": "Mario",
+        "surname": "Flores",
+        "age": 22,
+        "email": "mar1980@gmail.com",
+        "phone": 2645887711,
+        "hobbies": ["Saltar", "Correr", "Cocinar"]
+    },
+    {
+        "name": "Pablo",
+        "surname": "García",
+        "age": 18,
+        "email": "pablito@hotmail.com",
+        "phone": 2665417258
+    },
+    {
+        "name": "Joel",
+        "surname": "Bianchi",
+        "age": 35,
+        "email": "joel2024@gmail.com",
+        "phone": 2665109944,
+        "hobbies": ["Caminar"]
+    },
+    {
+        "name": "Maria",
+        "surname": "Torres",
+        "age": 18,
+        "email": "mar.arg@gmail.com",
+        "phone": 2615770011,
+        "hobbies": ["Cantar", "Saltar", "Nadar", "Bailar"]
+    },
+    {
+        "name": "Fernando",
+        "surname": "Flores",
+        "age": 50,
+        "email": "fer.flores@hotmail.com",
+        "phone": 3515112244,
+        "hobbies": ["Correr", "Cocinar"]
+    },
+    {
+        "name": "Paula",
+        "surname": "García",
+        "age": 24,
+        "email": "pau2000@yahoo.com",
+        "phone": 2616778855
+    },
+    {
+        "name": "Gerardo",
+        "surname": "Medina",
+        "age": 21,
+        "email": "gera@gmail.com",
+        "phone": 2645410001,
+        "hobbies": ["Caminar", "Cantar", "Saltar", "Correr"]
+    }
+]
