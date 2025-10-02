@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: #212529;
+  text-decoration: none;
+}
+
+img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Super Plants";
+  src: url("../assets/fonts/super_plants.ttf");
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "navbar" "main" "footer";
+  grid-template-rows: max-content max-content 1fr max-content;
+}
+
+footer {
+  grid-area: footer;
+  padding: 0.5rem;
+}
+footer .copyright {
+  color: #343a40;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  padding: 1.5rem;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+nav {
+  grid-area: navbar;
+  padding: 0.5rem;
+}
+
+.page-home .welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page-home .welcome .box {
+  border: 1px solid black;
+}
+.page-home .welcome .box__text {
+  color: white;
+  padding: 0.5rem;
+  text-shadow: -0.0625rem -0.0625rem 0 #343a40, 0.0625rem -0.0625rem 0 #343a40, -0.0625rem 0.0625rem 0 #343a40, 0.0625rem 0.0625rem 0 #343a40, 0 0 0;
+}
+.page-home .welcome .box--a {
+  height: 200px;
+  width: 200px;
+  background-color: darkorange;
+}
+.page-home .welcome .box--b {
+  height: 150px;
+  width: 150px;
+  background-color: darkred;
+}
+.page-home .welcome .box--c {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+.page-home .welcome .box--d {
+  height: 100%;
+  width: 200px;
+  background-color: lightblue;
+}
+.page-home .welcome .box--e {
+  height: 200px;
+  width: 200px;
+  overflow: scroll;
+  background-color: lightgoldenrodyellow;
+}/*# sourceMappingURL=main.css.map */
